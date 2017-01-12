@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./dist/semantic.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./dist/semantic.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+  <style>
+  .transbig
+  {
+    background: rgba(32,154,189,0.655);
+  }
+  </style>
+  <div class="pusher">
+    <div class="ui vertical aligned center segment landing inverted">
+        <div class="transbig">
+          <div class="ui container">
+            <div class="ui secondary inverted top large pointing menu">
+              <div class="left item">
+                <a class="toc item">
+                  <i class="sidebar icon"></i>
+                </a>
+              </div>
+              <div class="right item">
+                <a href="project1.html" class="active item">Home</a>
+                <a href="" class="item">Cities</a>
+                <a href="" class="item">Find a Team</a>
+                <div class="item">
+                  <div class="ui buttons">
+                    <!-- <button class="ui button black">
+                      <i class="sign in icon"></i>Log In
+                    </button> -->
+                    <!-- <div class="or"></div> -->
+                    <a href="project1.html">
+                    <button class="ui button green">
+                      <i class="home icon"></i>Home
+                    </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="ui one column center aligned grid">
+  <div class="column six wide form-holder">
+    <h2 class="center aligned header form-head">Sign in</h2>
+    <form class="ui form">
+      <div class="field">
+        <input type="text" placeholder="username" name="name">
+      </div>
+      <div class="field">
+        <input type="password" placeholder="password" name="pass">
+      </div>
+      <div class="field">
+        <input type="submit" value="sign in" class="ui button large fluid green" id="onclick">
+      </div>
+      <div class="inline field">
+        <div class="ui checkbox">
+          <input type="checkbox">
+          <label>Remember me</label>
+        </div>
+      </div>
+      <div class="ui error message"></div>
+    </form>
+  </div>
+</div>
+<script>
+  $('#onclick').click(function()
+  {
+    $('.ui.form')
+  .form({
+    fields: {
+      name: {
+        identifier: 'name',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Please enter your name'
+          }
+        ]
+      },
+      pass: {
+        identifier: 'pass',
+        rules: [
+          {
+            type   : 'empty',
+            prompt : 'Plese enter the password'
+          }
+        ]
+      }
+    }
+  });
+});
+</script>
+</body>
+</html>
