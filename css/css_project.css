@@ -1,91 +1,30 @@
-header #search
+#body
 {
-	margin-left: 170px;
-	margin-top: 10px;
-} 
-p
-{
-    font-family: arial;
-    font-size: 14px;
-    color: white
-}
-.ui {
-  display: block;
-  float: none;
-  width: auto;
-}
-header #logo
-{
-	margin-top: 20px;
-}
-header #log
-{
-	float: right;
-	margin-right: 0px;
-}
-header #buttons
-{
-	width: 100%;
-}
-header
-{
-	background: grey;
-}
-.transbig
-  {
-    background: rgba(32,154,189,0.655);
-  }
-
-header .second_header
-{
-	padding-bottom: 0px;
-}
-.second_header
-{
-	margin-top: 25px;
-}
-#id2
-{
-	height: 300px;
-}
-.main
-{
-    background: url('../img/background.jpg') no-repeat left top;;
+    /*background: grey;*/
+    background: url('../img/background.jpg') no-repeat center center;
     width: 1349px;
+    height: auto;
     background-size: 100% 100%;
 }
-.main #cardID
-{
-	width: 90%;
-    float: right;
-    margin-top: 9px;
-    background: #1b1814;
-    margin-right: 2px;
+@media only screen and (min-width: 800px) {
+    #side {
+        display:none;
+    }
 }
-.main #mid_img
+.middle_menu
 {
-	 margin-top: 10px;
-    border-radius: 5px;
-    width: 100%;
-    margin-left: 30px;
-    height: 278px;
-}
-#para p
-{
-	margin-top: 10px;
-    text-align: center;
-    margin-bottom: 40px;
+        margin-left: 279px;
+    margin-top: 3px;
 }
 .bg{
-  	background: url('../img/fifa5.jpg') no-repeat;
+    background: url('../img/fifa5.jpg') no-repeat;
     background-position: 0px 8px;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     background-size: 100% 100%;
-    background-size: 100%;
-    width: 1347px;
-    min-height: 300px;
-    margin-top: 10px;
+    /*width: px;*/
+    min-height: 400px;
+    margin-top: 67px;
 }
 .bg:hover
 {
@@ -94,14 +33,34 @@ header .second_header
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     background-size: 100% 100%;
-    background-size: 100%;
-    width: 1347px;
-    min-height: 300px;
-    margin-top: 10px;
+    /*width: px;*/
+    min-height: 400px;
+    margin-top: 67px;
+}
+.ui.menu.item:hover
+{
+    color: white!important;
+    font-size: 16px;
+    font-weight: bold;
+}
+.bg p
+{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding-top: 185px;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    background: transparent;
+    font-size: 20px;
+}
+#smid1,#smid2,#smid3
+{
+    width: 385px;
+    background: rgba(192, 201, 53, 0.89);
 }
 #col
 {
-    background: white;
+    background: rgba(0, 0, 0, 0.83);
 }
 #button2
 {
@@ -111,75 +70,62 @@ header .second_header
 {
     height: 193px;
 }
+.second_main p
+{
+    color: white;
+}
+#flag
+{
+    height: 241px;
+}
+/*#smid1
+{
+    height: 241px;
+}*/
 #smid3
 {
-    /*float: right;
+    /*float: right;*/
     /*padding-bottom: 30px;
     /*background: teal;
     margin-left: 14px;
-    height: 556px;*/
-    background: teal;
+    height: 556px;
+    background: teal;*/
 
 }
-#smid2
+#shot
 {
-        /*margin-left: 63px;*/
-        /*padding-bottom: 13px;*/
-        background: teal;
-        /*padding-left: 50px;*/
-
-}
-#smid1
-{
-    /*float: left;*/
-    background: teal;
-}
-/*.jumbotron {
-    margin-bottom: 0px;
-    height: 350px;
-    color: white;
-    text-shadow: black 0.3em 0.3em 0.3em;
-    background: transparent;
-}*/
-.bg p
-{
-	font-family: 'Lobster', cursive;
-	text-align: center;
-	padding-top: 370px;
-	color: white;
-    text-shadow: black 0.3em 0.3em 0.3em;
-    background: transparent;
-    font-size: 20px;
-}
-#thid
-{
-    background: green;
-    height: 300px;
+    width: 286px;
 }
 #uis
 {
-    height: 457px;
-    margin-top: 13px;
+    height: 440px;
+    margin-top: 1px;
+    margin-bottom: 34px;
 }
-#paragraph
-{
-	width: 500px;
-	margin-top: 10px;
+.ui.menu {
+    background: rgba(163, 163, 163, 0.9) !important;
 }
-img
+.ui.segment
 {
-            height: 417px;
-            width: 315px;
+    background: rgba(27, 2, 2, 0.55)!important;
+}
+.ui.items>.item>.content>.header
+{
+    color: white!important;
+}
+body
+{
+    color: rgba(236, 221, 221, 0.87)!important;
 }
 #ugs
 {
-        background: teal;
-        margin-left: -16px;
+    background: #eddcf5;
 }
-footer {
-    padding: 1em;
-    color: white;
-    background-color: black;
-    clear: left;
-    text-align: center;
+.ui.items>.item>.content>.description
+{
+    color: rgba(239,227,227,.87)!important;
+}
+footer
+{
+    margin-top: 30px;
 }

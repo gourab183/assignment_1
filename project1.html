@@ -1,61 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./css/css_project.css">
-	<link rel="stylesheet" type="text/css" href="./dist/semantic.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="./dist/semantic.min.js"></script>
-	<title>My Website</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/css_project.css">
+  <link rel="stylesheet" type="text/css" href="./dist/semantic.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./dist/semantic.min.js"></script>
+  <title>My Website</title>
 </head>
 <body>
-  <!-- Header -->
-		<header>
-      <div class="ui container">
-        <div class="ui large top fixed hidden menu">
-          <a class="active item">Home</a>
-          <a class="item">Teams</a>
-          <a class="item">Venue</a>
-          <a class="item">Ranking</a>
-          <div class="right menu">
-            <a href="signin.html">
-              <div class="item">
-                  <button class="ui button">Log in</button>
-              </div>
-            </a>
+  <div id="body" class="ui secondary container">
+    <!-- Sidebar -->
+    <div class="ui left demo vertical inverted sidebar labeled icon menu">
+  <a class="active item">
+    Home
+  </a>
+  <a class="item">
+    Statistics
+  </a>
+  <a class="item">
+    Teams
+  </a>
+              <a class="item" href="signin.html">
+                  <button class="ui secondary button">Log in</button>
+              </a>
           <div class="item">
             <a class="ui primary button">Sign Up</a>
           </div>
-          </div>
-
-        </div>
+</div>
+<!-- Main Header -->
+  <header>
+    <div class="ui container">
+   <div class="ui top fixed hidden menu">
+    <a id="toggle" class="item">
+      <i id="side" class="sidebar icon"></i>
+    </a>
+      <div class="item">
+        <img src="./img/logo2.jpg" alt="" style="width: 47px;">
       </div>
-    </header>
-<!-- Main Content -->
-<div class="main">
+  <div class="middle_menu">
+      <div class="ui massive icon input">
+        <input type="text" placeholder="Search...">
+        <i class="search link icon"></i>
+      </div>
+    </div>
+    <div class="right menu">
+    <a class="active item">
+    Home
+  </a>
+  <a class="item">
+    Statistics
+  </a>
+  <a class="item">
+    Teams
+  </a>
+              <a class="item" href="signup1.html">
+                  <button class="ui secondary button">Log in</button>
+              </a>
+          <div class="item">
+            <a class="ui primary button">Sign Up</a>
+          </div>
+  </div>
+  </div>
+</div> 
+  </header>
   <!-- First Main Content -->
-	<div class="ui first_main">
-		<div class="ui stackable grid">
-				<div class="row">
+  <div class="first_main">
+    <div class="ui grid container">
           <!-- <div class="jumbotron"> -->
-					<div class="sixteen width column">
-						<div class="bg">
-    						<!-- <div class="jumbotron"> -->
-								<p>The FIFA World Cup, often simply called the World Cup, is an international association football competition contested by the senior men's national teams of the members of Fédération Internationale de Football Association (FIFA), the sport's global governing body. The championship has been awarded every four years since the inaugural tournament in 1930, except in 1942 and 1946
+          <div class="sixteen wide column">
+            <div class="bg">
+                <!-- <div class="jumbotron"> -->
+                <p>The FIFA World Cup, often simply called the World Cup, is an international association football competition contested by the senior men's national teams of the members of Fédération Internationale de Football Association (FIFA), the sport's global governing body. The championship has been awarded every four years since the inaugural tournament in 1930, except in 1942 and 1946
                 </p>
-						</div>
-					</div>
-				</div>
-			</div>
-	</div>
+            </div>
+          </div>
+        <!-- </div> -->
+      </div>
+  </div>
   <!-- Second Main Content -->
-	<div class="second_main ui container">
+  <div class="second_main ui container">
         <div class="ui three column stackable grid">
               <div class="column">
-							   <div id="smid1" class="ui card">
-                    <div class="ui slide masked reveal image">
+                 <div id="smid1" class="ui card">
+                    <div id="flag" class="ui slide masked reveal image">
                       <img src="./img/brazil.png" class="visible content">
                       <img src="./img/bt.jpg" class="hidden content">
                     </div>
@@ -64,18 +94,28 @@
                       <div class="description">
                         <p>
                         The Germany national football team (German: Die deutsche Fußballnationalmannschaft or just Die Mannschaft) is the men's football team that has represented Germany in international competition since 1908. It is governed by the German Football Association (Deutscher Fußball-Bund), founded in 1900.Ever since the DFB was reinaugurated in 1949 the team has represented the Federal Republic of Germany. Under Allied occupation and division, two other separate national teams were also recognised by FIFA
-                	       </p>
+                         </p>
                       </div>
                     </div>
                     <div class="extra content" id="col">
-                    <button class="ui primary large button">Team</button>
-                          <button class="ui red large button" id="button2">Player</button>
+                      <div class="ui animated primary large button" tabindex="0">
+                        <div class="visible content">Team</div>
+                        <div class="hidden content">
+                            <i class="users icon"></i>
+                        </div>
+                      </div>
+                      <div id="button2" class="ui animated red large button" tabindex="0">
+                        <div class="visible content">Player</div>
+                        <div class="hidden content">
+                           <i class="user icon"></i>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="column">
-							     <div id="smid2" class="ui card">
-                      <div class="ui slide masked reveal image">
+                   <div id="smid2" class="ui card">
+                      <div id="flag" class="ui slide masked reveal image">
                       <img src="./img/france1.png" class="visible content">
                       <img src="./img/ft.jpg" class="hidden content">
                     </div>
@@ -84,61 +124,124 @@
                           <div class="description">
                           <p>
                               The Germany national football team (German: Die deutsche Fußballnationalmannschaft or just Die Mannschaft) is the men's football team that has represented Germany in international competition since 1908. It is governed by the German Football Association (Deutscher Fußball-Bund), founded in 1900.Ever since the DFB was reinaugurated in 1949 the team has represented the Federal Republic of Germany. Under Allied occupation and division, two other separate national teams were also recognised by FIFA
-                	         </p>
+                           </p>
                           </div>
                       </div>
                       <div class="extra content" id="col">
-                          <button class="ui primary large button">Team</button>
-                          <button class="ui red large button" id="button2">Player</button>
+                        <div class="ui animated primary large button" tabindex="0">
+                        <div class="visible content">Team</div>
+                        <div class="hidden content">
+                            <i class="users icon"></i>
+                        </div>
+                      </div>
+                      <div id="button2" class="ui animated red large button" tabindex="0">
+                        <div class="visible content">Player</div>
+                        <div class="hidden content">
+                           <i class="user icon"></i>
+                        </div>
+                      </div>
                       </div>
                     </div>
                 </div>
-						    <div class="column">
-						      <div id="smid3" class="ui card">
-                      <div class="ui slide masked reveal image">
+                <div class="column">
+                  <div id="smid3" class="ui card">
+                      <div id="flag" class="ui slide masked reveal image">
                       <img src="./img/germany1.png" class="visible content">
                       <img src="./img/gt.jpg" class="hidden content">
                     </div>
                       <div class="content">
                         <a class="header">Germany</a>
                           <div class="description">
-                	           <p>
+                             <p>
                                   The Germany national football team (German: Die deutsche Fußballnationalmannschaft or just Die Mannschaft) is the men's football team that has represented Germany in international competition since 1908. It is governed by the German Football Association (Deutscher Fußball-Bund), founded in 1900.Ever since the DFB was reinaugurated in 1949 the team has represented the Federal Republic of Germany. Under Allied occupation and division, two other separate national teams were also recognised by FIFA
-                	           </p>
+                             </p>
                           </div>
                       </div>
                       <div class="extra content" id="col">
-                       <button class="ui primary large button">Team</button>
-                          <button class="ui red large button" id="button2">Player</button>
+                        <div class="ui animated primary large button" tabindex="0">
+                        <div class="visible content">Team</div>
+                        <div class="hidden content">
+                            <i class="users icon"></i>
+                        </div>
+                      </div>
+                      <div id="button2" class="ui animated red large button" tabindex="0">
+                        <div class="visible content">Player</div>
+                        <div class="hidden content">
+                           <i class="user icon"></i>
+                        </div>
+                      </div>
                       </div>
                   </div>
-				        </div>
-				</div>
-		</div>
-    <!-- Third Main Content -->
-  	<div class="third_main ui container">
-			<div class="ui two column stackable grid">
-					<div class="column">
-						<div id="ugs" class="ui grid segment">
-								<div class="ten wide column">
-									<img src="./img/shot.jpg">
-								</div>
-								<div class="six wide column">
-									<p>The Germany national football team is the men's football team that has represented Germany in international competition since 1908.</p>
-									<p>The Germany national football team is the men's football team that has represented Germany in international competition since 1908.</p>
-									<p>The Germany national football team is the men's football team that has represented Germany in international competition since 1908.</p>
-								</div>
-						</div>
-					</div>
-					<div class="column">
-						<div id="uis" class="ui inverted segment">
+                </div>
+        </div>
+      </div>
+        <!-- Third Main Container-->
+    <div class="third_main ui container">
+      <div class="ui two column stackable grid">
+          <div class="column">
+            <div class="ui items segment">
+              <div class="item">
+                <div class="ui small image">
+                  <img src="./img/shot2.jpg">
+                </div>
+                <div class="content">
+                  <div class="header">Neymar</div>
+                    <div class="middle aligned content">
+                        <span class="price">15 Goals</span>
+                        <span class="stay">10 Matches</span>
+                    </div>
+                    <div class="description">
+                        <p>Lionel Messi is the heir apparent to the throne left vacant by Diego Armando Maradona. The waters are divided between </p>
+                    </div>
+                </div>
+              </div>
+              <div class="ui horizontal divider">
+                Or
+              </div>
+              <div class="item">
+                <div class="ui small image">
+                  <img src="./img/shot1.jpg">
+                </div>
+                <div class="content">
+                  <div class="header">Chirstiano Ronaldo</div>
+                    <div class="middle aligned content">
+                      <span class="price">11 Goals</span>
+                      <span class="stay">8 Matches</span>
+                    </div>
+                    <div class="description">
+                      <p>Lionel Messi is the heir apparent to the throne left vacant by Diego Armando Maradona. The waters are divided between </p>
+                    </div>
+                </div>
+              </div>
+              <div class="ui horizontal divider">
+                Or
+              </div>
+              <div class="item">
+                <div class="ui small image">
+                  <img src="./img/shot4.jpg">
+                </div>
+                <div class="content">
+                  <div class="header">Lonel Messi</div>
+                    <div class="middle aligned content">
+                      <span class="price">16 Goals</span>
+                      <span class="stay">12 Matches</span>
+                    </div>
+                    <div class="description">
+                      <p>Lionel Messi is the heir apparent to the throne left vacant by Diego Armando Maradona. The waters are divided between </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div id="uis" class="ui inverted segment">
               <div class="ui inverted accordion">
                 <div class="active title">
                     <i class="dropdown icon"></i>
                         What is a Football?
                 </div>
                 <div class="active content">
-                    <p>A Football is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
+                    <p>A Football is a type of International Game. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
                 </div>
                 <div class="title">
                     <i class="dropdown icon"></i>
@@ -179,11 +282,11 @@
               </div>
             </div>
           </div>
-			</div>
-		</div>
-		</div>
+      </div>
+    </div>
+    </div>
     <!-- Footer -->
-    <div class="ui vertical inverted black footer segment">
+    <footer class="ui vertical inverted black segment">
   <div class="container" style="text-align:center;">
     <div class="ui stackable inverted divided relaxed grid">
       <div class="three wide column">
@@ -221,12 +324,13 @@
       </div>
     </div>
   </div>
-</div>
-	<script>
-		$('.ui.accordion').accordion();
-    $('#toggle').click(function(){
-      $('.ui.sidebar').sidebar('toggle');
+</footer>
+  <script>
+    $('.ui.accordion').accordion();
+    $('#side').click(function(){
+      $('.ui.labeled.icon.sidebar').sidebar('toggle');
     });
-	</script>
+  </script>
+  </div>
 </body>
 </html>
